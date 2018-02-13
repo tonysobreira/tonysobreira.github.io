@@ -1,0 +1,23 @@
+open git bash on directory
+
+ls: show all files
+
+git init
+git remote add origin <repository>
+example: 
+git remote add origin https://github.com/tonysobreira/tonysobreira.github.io.git
+
+add all files:
+git add.
+or
+git add --all
+
+---
+show status:
+git status
+
+---
+
+git commit -m "message"
+
+git push origin master
