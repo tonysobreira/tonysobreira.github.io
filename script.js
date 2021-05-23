@@ -2,6 +2,8 @@ var app = angular.module("app", []);
 app.controller("ctrl", function ($scope) {
     $scope.projects = projects;
     $scope.projectsfrontback = projectsfrontback;
+    $scope.projectsrepositories = projectsrepositories;
+    $scope.projectsrepositoriesfrontback = projectsrepositoriesfrontback;
 });
 
 var projects = [
@@ -407,3 +409,175 @@ var projectfrontback = {
     deployback: '',
     sourcecodeback: ''
 };
+
+var projectsrepositories = [
+    {
+        title: 'tonysobreira.github.io',
+        technologies: [
+            'site github',
+            'lista de projetos',
+            'curriculo online'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/tonysobreira.github.io'
+    },
+    {
+        title: 'spring-data-jpa-h2-rest',
+        technologies: [
+            'rest api',
+            'crud (produto)'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/spring-data-jpa-h2-rest'
+    },
+    {
+        title: 'angularjs-material',
+        technologies: [
+            'angularjs',
+            'material template'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/angularjs-material'
+    },
+    {
+        title: 'jquery-consume-rest',
+        technologies: [
+            'jquery',
+            'rest',
+            'ombd api'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/jquery-consume-rest'
+    },
+    {
+        title: 'JavaWebApplicationStepByStep',
+        technologies: [
+            'java servlet',
+            'right click -> run as -> maven build -> tomcat7:run'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/JavaWebApplicationStepByStep'
+    },
+    {
+        title: 'javaservlet',
+        technologies: [
+            'java servlet',
+            'login',
+            'crud',
+            'filter',
+            'right click -> run as -> maven build -> tomcat7:run'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/javaservlet'
+    },
+    {
+        title: 'ionic-imdb-movie-app',
+        technologies: [
+            'ionic',
+            'omdbapi'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/ionic-imdb-movie-app'
+    },
+    {
+        title: 'ionic-photo-gallery',
+        technologies: [
+            'ionic',
+            'camera',
+            'storage'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/ionic-photo-gallery'
+    },
+    {
+        title: 'IonicConsumeRestApiExample',
+        technologies: [
+            'ionic',
+            'rest',
+            'reqres',
+            'obs.: npm install @ionic/app-scripts@latest --save-dev'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/IonicConsumeRestApiExample'
+    },
+    {
+        title: 'consume-rest-javascript-native',
+        technologies: [
+            'javascript',
+            'jquery',
+            'rest',
+            'reqres'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/consume-rest-javascript-native'
+    },
+    {
+        title: 'prime-react-sigma-template',
+        technologies: [
+            'primefaces',
+            'react',
+            'template',
+            'admin'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/prime-react-sigma-template'
+    },
+    {
+        title: 'readme-example',
+        technologies: [
+            'adicionar readme e about nos projetos'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/readme-example'
+    },
+    {
+        title: 'startbootstrap-themes-templates',
+        technologies: [
+            'springboot',
+            'https://startbootstrap.com/'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/startbootstrap-themes-templates'
+    }
+];
+
+var projectrepository = {
+    title: '',
+    technologies: [
+        ''
+    ],
+    sourcecode: ''
+};
+
+var projectsrepositoriesfrontback = [
+    {
+        titlefront: 'spring-angular-auth-rest-client',
+        technologiesfront: [
+            'angular'
+        ],
+        sourcecodefront: 'https://github.com/tonysobreira/spring-angular-auth-rest-client',
+        titleback: 'spring-angular-auth-rest',
+        technologiesback: [
+            'springboot',
+            'rest',
+            'jwt',
+            'implementar dto',
+            '***** subir para o heroku'
+        ],
+        sourcecodeback: 'https://github.com/tonysobreira/spring-angular-auth-rest'
+    },
+    {
+        titlefront: 'securing-spring-boot-and-react-js-with-spring-security-using-jwt-authentication-frontend',
+        technologiesfront: [
+            'react'
+        ],
+        sourcecodefront: 'https://github.com/tonysobreira/securing-spring-boot-and-react-js-with-spring-security-using-jwt-authentication-frontend',
+        titleback: 'securing-spring-boot-and-react-js-with-spring-security-using-jwt-authentication-backend',
+        technologiesback: [
+            'jwt',
+            'springboot',
+            'spring security'
+        ],
+        sourcecodeback: 'https://github.com/tonysobreira/securing-spring-boot-and-react-js-with-spring-security-using-jwt-authentication-backend'
+    }
+];
+
+var projectrepositoryfrontback = {
+    titlefront: '',
+    technologiesfront: [
+        ''
+    ],
+    sourcecodefront: '',
+    titleback: '',
+    technologiesback: [
+        ''
+    ],
+    sourcecodeback: ''
+}

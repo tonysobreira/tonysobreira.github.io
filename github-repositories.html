@@ -69,8 +69,76 @@
         <div class="container">
             <h1 class="mt-5">GitHub Repositories</h1>
 
+            <div class="row">
+                <div class="col" ng-repeat="project in projectsrepositories">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">{{project.title}}</h5>
+                      <p class="card-text">
+                      <ul ng-repeat="technology in project.technologies">
+                        <li>{{technology}}</li>
+                      </ul>
+                      </p>
+                      <div>
+                        Source Code: <a href={{project.sourcecode}} target="_blank">GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="container">
+            <h1 class="mt-5">GitHub Repositories Frontent / Backend</h1>
+
+            <div class="row">
+                <div class="col" ng-repeat="project in projectsrepositoriesfrontback">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">{{project.titlefront}}</h5>
+                      <p class="card-text">
+                      <ul ng-repeat="technology in project.technologiesfront">
+                        <li>{{technology}}</li>
+                      </ul>
+                      </p>
+                      <div>
+                        Source Code: <a href={{project.sourcecodefront}} target="_blank">GitHub</a>
+                      </div>
+
+                      <h5 class="card-title">{{project.titleback}}</h5>
+                      <p class="card-text">
+                      <ul ng-repeat="technology in project.technologiesback">
+                        <li>{{technology}}</li>
+                      </ul>
+                      </p>
+                      <div>
+                        Source Code: <a href={{project.sourcecodeback}} target="_blank">GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
         </div>
     </main>
+
+    <!--
+
+        ----- PRIVATE
+        devutil-frontend
+        devutil-backend
+        site com ferramentas para devs
+
+        sites
+        https://reqres.in/
+        https://www.djamware.com/
+
+        repositorios
+        https://github.com/adminfaces/admin-starter-springboot-security
+        https://github.com/rmpestano/admin-starter
+
+    -->
 
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
