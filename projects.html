@@ -32,9 +32,10 @@
 
   <!-- Custom styles for this template -->
   <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100" ng-app="app" ng-controller="ctrl">
 
   <header>
     <!-- Fixed navbar -->
@@ -66,349 +67,113 @@
   <!-- Begin page content -->
   <main class="flex-shrink-0">
     <div class="container">
-      <h1 class="mt-5">Projects</h1>
+      <h1 class="mt-5">Projects Fullstack</h1>
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">admin-starter-springboot-sec</h5>
-          <p class="card-text">
-          <ul>
-            <li>joinfaces framework</li>
-            <li>springboot</li>
-            <li>jsf</li>
-            <li>hibernate envers</li>
-            <li>jpa</li>
-            <li>spring security</li>
-            <li>primefaces</li>
-          </ul>
-          </p>
-          <a href="#" target="_blank" class="btn btn-primary">Heroku</a>
-          <a href="#" target="_blank" class="btn btn-primary">GitHub</a>
+      <div class="row">
+        <div class="col" ng-repeat="project in projects">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{project.title}}</h5>
+              <p class="card-text">
+              <ul ng-repeat="technology in project.technologies">
+                <li>{{technology}}</li>
+              </ul>
+              </p>
+              <div>
+                Deploy: <a href={{project.deploy}} target="_blank">Heroku</a>
+              </div>
+              <div>
+                Source Code: <a href={{project.sourcecode}} target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      =====
-      admin-starter-springboot-sec:
-      joinfaces framework
-      springboot
-      jsf
-      hibernate envers
-      jpa
-      spring security
-      primefaces
-      --não está rodando localhost
-      =====
-
-      =====
-      angularjs-basic-page:
-      angularjs
-      =====
-
-      =====
-      angularjs-springboot-upload-fi:
-      springboot
-      angularjs
-      jpa
-      rest
-      fileupload
-      h2
-      =====
-
-      =====
-      cliente-page:
-      angularjs
-      angular material
-      -----
-      cliente-rest-api:
-      springboot
-      jpa
-      rest
-      h2
-      =====
-
-      =====
-      clientrestservice:
-      rest
-      jpa
-      heroku-postgresql
-      não abre requisições no browser
-      =====
-
-      =====
-      consumerestjava:
-      consome rest api = cliente-rest-api
-      gson
-      jsf
-      primefaces
-      =====
-
-      =====
-      datacaptureclient:
-      angularjs
-      bootstrap
-      -----
-      datacaptureserver:
-      springboot
-      rest
-      jpa
-      =====
-
-      =====
-      gs-uploading-files:
-      springboot
-      spring mvc
-      fileupload
-      save file local
-      =====
-
-      =====
-      joinfaces-project:
-      jsf
-      springboot
-      heroku postgresql
-      primefaces
-
-      login: admin@admin 123
-      user@user 123
-      =====
-
-      =====
-      javaguides-react-frontend:
-      react
-      -----
-      javaguides-springboot-backend:
-      springboot
-      jpa
-      h2
-      =====
-
-      =====
-      jsfspringhsqldb:
-      jsf
-      hsqldb
-      =====
-
-      =====
-      jsf-pf-spring-sec-pf-interface:
-      jsf
-      spring mvc
-      primefaces
-      heroku postgresql
-      spring security
-      =====
-
-      =====
-      jsf-pf-spring-security-no-db:
-      jsf
-      primefaces
-      h2
-      spring security
-      spring mvc
-      =====
-
-      =====
-      jsf-primefaces-spring-security:
-      jsf
-      primefaces
-      spring security
-      heroku postgresql
-      =====
-
-      =====
-      jsfspringcustomviewscope:
-      jsf
-      jpa
-      spring mvc
-      hsqldb
-      =====
-
-      =====
-      springboot-fileupload:
-      file upload
-      springboot
-      jpa
-      h2
-      angular js
-      =====
-
-      =====
-      spring-login-tutorial:
-      springboot
-      jpa
-      heroku postgresql
-      lombok
-      thymeleaf
-      spring security
-      bootstrap
-      =====
-
-      =====
-      springboot-adminlte:
-      springboot
-      heroku postgresql
-      jpa
-      spring security
-      thymeleaf
-      lombok
-      login: admin@admin 12345
-      =====
-
-      =====
-      project-ultima:
-      jsf
-      ultima template
-      heroku postgresql
-      spring security
-      primefaces
-      login: admin@admin 123
-      =====
-
-      =====
-      react-imdb-movie-app:
-      react
-      primfaces sigma template (admin)
-      omdbapi
-      =====
-
-      =====
-      react-rest-reqres:
-      react
-      rest
-      reqres site
-      =====
-
-      =====
-      spring-boot-angularjs-no-db:
-      springboot
-      angularjs
-      crud
-      h2
-      =====
-
-      =====
-      spring-boot-thymeleaf-project:
-      springboot
-      thymeleaf
-      jpa
-      crud
-      h2
-      dto
-      =====
-
-      ===== bezKoder tutorial
-      springboot-securityjwt-front:
-      react
-      rest
-      jwt
-      -----
-      springboot-securityjwt-backend:
-      springboot
-      spring security
-      jwt
-      userDetails
-      =====
-
-      *****
-      ===== Primefaces Sigma (Admin)
-      springboot-security-jwt-front:
-      react
-      primefaces sigma (admin)
-      jwt
-      -----
-      springboot-security-jwt-back:
-      springboot
-      spring security
-      jwt
-      userDetails
-      heroku postgresql
-      =====
-      *****
-
-      ===== in28Minutes tutorial
-      spring-boot-react-jwt-frontend:
-      react
-      jwt
-      -----
-      spring-boot-react-jwt-backend:
-      springboot
-      spring security
-      =====
-
-      =====
-      lagnoid:
-      Unity
-      Projeto final Ciência da Computação - Unifacs
-      =====
-
-      =====
-      sds3-tony:
-      github: projeto-sds3
-      front: react
-      back: springboot
-      Projeto criado na 3ª edição Dev Superior
-      Readme template para ser usado em outros repositórios
-      https://tony-dsvendas.netlify.app
-      =====
-
-      ===== Curso Nelio Alves
-      curso-spring-ionic-back-end:
-      springboot
-      jwt
-      spring security
-
-      front-end github: https://github.com/tonysobreira/curso-spring-ionic-frontend
-      back-end github: https://github.com/tonysobreira/spring-boot-ionic-backend
-
-      repositorios extras do curso:
-      https://github.com/tonysobreira/workshop-springboot2-mongodb
-      https://github.com/tonysobreira/cursomc-arquivos
-      https://github.com/tonysobreira/cursomc-temp-
-      https://github.com/tonysobreira/aula-jpa
-      https://github.com/tonysobreira/spring-boot-ionic-backend-temp-
-      Curso Udemy SpringBoot REST JWT React
-      =====
-
-      *****
-      ===== Atualizar projeto
-      base-project-jsf-spring-pf:
-      jsf
-      primefaces
-      heroku postgresql
-      spring mvc
-      jpa
-      não rodando local
-      rodando heroku
-      =====
-
-      =====
-      react-redux-hooks-jwt-auth:
-      react
-      redux
-      hooks
-      jwt
-      auth
-      back-end: https://springboot-securityjwt-backend.herokuapp.com/api/auth
-      não rodando no heroku
-      =====
-
-      =====
-      primefaces-ultima-project:
-      jsf
-      primefaces ultima
-      heroku postgresql
-      spring security
-      não rodando no heroku
-      =====
-
-      =====
-      primefacesultimaproject:
-      jsf
-      primefaces ultima
-      heroku postgresql
-      spring security
-      não rodando no heroku
-      =====
     </div>
+
+    <!-- Projects frontend and backend -->
+
+    <div class="container">
+      <h1 class="mt-5">Projects Frontend/Backend</h1>
+
+      <div class="row">
+        <div class="col" ng-repeat="project in projectsfrontback">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{project.titlefront}}</h5>
+              <p class="card-text">
+              <ul ng-repeat="technology in project.technologiesfront">
+                <li>{{technology}}</li>
+              </ul>
+              </p>
+              <div>
+                Deploy: <a href={{project.deployfront}} target="_blank">Heroku</a>
+              </div>
+              <div>
+                Source Code: <a href={{project.sourcecodefront}} target="_blank">GitHub</a>
+              </div>
+
+              <h5 class="card-title">{{project.titleback}}</h5>
+              <p class="card-text">
+              <ul ng-repeat="technology in project.technologiesback">
+                <li>{{technology}}</li>
+              </ul>
+              </p>
+              <div>
+                Deploy: <a href={{project.deployback}} target="_blank">Heroku</a>
+              </div>
+              <div>
+                Source Code: <a href={{project.sourcecodeback}} target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- 
+    ===== PRIVATE
+    datacaptureclient:
+    angularjs
+    bootstrap
+    -----
+    datacaptureserver:
+    springboot
+    rest
+    jpa
+    =====
+
+    ===== PRIVATE
+    project-ultima:
+    jsf
+    spring security
+    ultima template
+    primefaces
+    heroku postgres
+    login: admin@admin 123
+    =====
+
+    ===== PRIVATE
+    primefaces-ultima-project:
+    jsf
+    primefaces ultima
+    spring security
+    heroku postgres
+    não rodando no heroku
+    =====
+
+    ===== PRIVATE
+    primefacesultimaproject:
+    jsf
+    spring security
+    primefaces ultima
+    heroku postgres
+    não rodando no heroku
+    =====
+    -->
+
   </main>
 
   <footer class="footer mt-auto py-3 bg-light">
@@ -419,7 +184,8 @@
 
 
   <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://kit.fontawesome.com/a1d899baa5.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
