@@ -288,6 +288,18 @@ var projects = [
         ],
         deploy: 'https://react-redux-hooks-jwt-auth.herokuapp.com/',
         sourcecode: 'https://github.com/tonysobreira/react-redux-hooks-jwt-auth'
+    },
+    {
+        title: 'springboot-jsf-primefaces',
+        technologies: [
+            'springboot',
+            'jsf',
+            'primefaces',
+            'h2',
+            'heroku vars'
+        ],
+        deploy: 'https://springboot-jsf-primefaces.herokuapp.com/',
+        sourcecode: 'https://github.com/tonysobreira/springboot-jsf-primefaces'
     }
 ];
 
