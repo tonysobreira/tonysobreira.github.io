@@ -300,6 +300,16 @@ var projects = [
         ],
         deploy: 'https://springboot-jsf-primefaces.herokuapp.com/',
         sourcecode: 'https://github.com/tonysobreira/springboot-jsf-primefaces'
+    },
+    {
+        title: 'springboot-angularjs',
+        technologies: [
+            'springboot',
+            'angularjs',
+            'h2'
+        ],
+        deploy: 'https://springboot-angularjs.herokuapp.com/',
+        sourcecode: 'https://github.com/tonysobreira/springboot-angularjs'
     }
 ];
 
