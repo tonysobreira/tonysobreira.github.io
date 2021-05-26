@@ -524,6 +524,16 @@ var projectsrepositories = [
         sourcecode: 'https://github.com/tonysobreira/prime-react-sigma-template'
     },
     {
+        title: 'prime-vue-sigma-template',
+        technologies: [
+            'primefaces',
+            'vue',
+            'template',
+            'admin'
+        ],
+        sourcecode: 'https://github.com/tonysobreira/prime-vue-sigma-template'
+    },
+    {
         title: 'readme-example',
         technologies: [
             'adicionar readme e about nos projetos'
