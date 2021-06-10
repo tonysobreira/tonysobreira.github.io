@@ -599,6 +599,22 @@ var projectsrepositoriesfrontback = [
         ],
         sourcecodeback: 'https://github.com/tonysobreira/securing-spring-boot-and-react-js-with-spring-security-using-jwt-authentication-backend'
     }
+    ,
+    {
+        titlefront: 'spring-boot-react-oauth2-social-login-frontend',
+        technologiesfront: [
+            'react'
+        ],
+        sourcecodefront: 'https://github.com/tonysobreira/spring-boot-react-oauth2-social-login-frontend',
+        titleback: 'spring-boot-react-oauth2-social-login-backend',
+        technologiesback: [
+            'jwt',
+            'springboot',
+            'spring security',
+            'social login (Google, Facebook, Github)'
+        ],
+        sourcecodeback: 'https://github.com/tonysobreira/spring-boot-react-oauth2-social-login-backend'
+    }
 ];
 
 var projectrepositoryfrontback = {
