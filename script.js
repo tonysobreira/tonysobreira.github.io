@@ -598,8 +598,7 @@ var projectsrepositoriesfrontback = [
             'spring security'
         ],
         sourcecodeback: 'https://github.com/tonysobreira/securing-spring-boot-and-react-js-with-spring-security-using-jwt-authentication-backend'
-    }
-    ,
+    },
     {
         titlefront: 'spring-boot-react-oauth2-social-login-frontend',
         technologiesfront: [
@@ -614,6 +613,20 @@ var projectsrepositoriesfrontback = [
             'social login (Google, Facebook, Github)'
         ],
         sourcecodeback: 'https://github.com/tonysobreira/spring-boot-react-oauth2-social-login-backend'
+    },
+    {
+        titlefront: 'spring-security-react-ant-design-polls-app-client',
+        technologiesfront: [
+            'react'
+        ],
+        sourcecodefront: 'https://github.com/tonysobreira/spring-security-react-ant-design-polls-app-client',
+        titleback: 'spring-security-react-ant-design-polls-app-server',
+        technologiesback: [
+            'jwt',
+            'springboot',
+            'spring security'
+        ],
+        sourcecodeback: 'https://github.com/tonysobreira/spring-security-react-ant-design-polls-app-server'
     }
 ];
 
