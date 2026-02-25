@@ -15,3 +15,6 @@ https://github.com/tonysobreira/product-rest-api
 
 (react, auth, book, email, product, scheduler)
 https://github.com/tonysobreira/microservices
+
+https://github.com/tonysobreira/primefaces-13-14-minimal
+
