@@ -11,3 +11,7 @@ https://github.com/tonysobreira/ecommerce-micro-service
 
 https://github.com/tonysobreira/product-rest-api
 
+
+
+(react, auth, book, email, product, scheduler)
+https://github.com/tonysobreira/microservices
